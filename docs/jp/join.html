@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+      参加する |
+      Virufy
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Interesado en aprovechar el poder de la tecnología de IA en la
+    lucha para detener COVID? Descubre cómo puedes participar y únete al equipo
+    de Virufy."
+    />
+    <meta name="author" content="Team Virufy" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <script defer src="../scripts/index.js"></script>
+
+    <!-- Cookie consent banner - Cookiebot -->
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="fb5fec28-28e3-45e9-baa6-51f9f62f936b"
+      data-blockingmode="auto"
+      type="text/javascript"
+    ></script>
+
+    <!-- TODO: Add Hotjar Tracking Script -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-165690517-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-165690517-3");
+    </script>
+  </head>
+
+  <body class="text-gray-100 font-body overscroll-none">
+    <!-- Nav section -->
+    <section class="relative">
+      <nav class="flex items-center justify-between wrapper md:py-4">
+        <!-- Virufy logo -->
+        <div>
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="../img/logos/virufy-logo.svg"
+              alt="Virufy logo"
+            />
+          </a>
+        </div>
+        <!-- Container for right side of nav -->
+        <div class="flex">
+          <!-- Mobile language button -->
+          <div class="inline-block mr-6">
+            <button
+              id="mobile-lng-btn"
+              class="px-3 py-1 text-sm border rounded lg:hidden button text-secondary-200 border-secondary-200"
+            >
+              日本語
+            </button>
+          </div>
+          <!-- Mobile language menu -->
+          <div class="hidden text-center mobile-menu" id="mobile-lng-menu">
+            <section class="px-4 py-4">
+              <span class="inline-block text-base gray-200 text"
+                >言語を選択</span
+              >
+            </section>
+            <!-- TODO: Add links to translated pages -->
+            <a href="./../join.html">
+              <section
+                class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+              >
+                <span>English</span>
+              </section>
+            </a>
+            <a href="./../es/join.html">
+              <section class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100">
+                <span>Español</span>
+              </section>
+            <a href="./../br/join.html">
+              <section
+                class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+              >
+                <span>Português</span>
+              </section>
+            </a>
+            <a href="./../hi/join.html">
+              <section
+                class="px-4 py-4 border-t border-gray-200 hover:bg-teal-100"
+              >
+                <span>हिन्दी</span>
+              </section>
+            </a>
+            
+
+            <!--
+              TODO: If we want to implement saving, we  need to enable
+              cookies to store the user's language preferences
+            <section
+              class="flex justify-center px-4 py-8 border-t border-gray-200"
+            >
+              <button class="w-full px-8 py-2 text-white rounded bg-primary"
+              id="mobile-save-btn">
+                Save
+              </button>
+            </section>
+            -->
+          </div>
+
+          <!-- Mobile nav menu icon -->
+          <div class="inline-block cursor-pointer lg:hidden" id="menu-icon">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 menu"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+          <!-- Mobile nav close icon -->
+          <div
+            class="hidden inline-block cursor-pointer lg:hidden"
+            id="close-icon"
+          >
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 x"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <!-- End of container -->
+
+        <!-- Mobile Nav -->
+        <div class="hidden px-6 mobile-menu" id="mobile-nav">
+          <section class="px-4 py-4 border-t border-gray-200">
+            <div class="flex mt-4">
+              <a href="./mission.html" class="w-1/2">
+                <span>ミッション</span>
+              </a>
+              <a href="./research.html" class="w-1/2">
+                <span>研究</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./team.html" class="w-1/2">
+                <span>チーム</span>
+              </a>
+              <a href="./join.html">
+                <span>参加する</span>
+              </a>
+            </div>
+            <div class="flex mt-2">
+              <a href="./data.html">
+                <span>オープンデータ</span>
+              </a>
+            </div>
+          </section>
+          <section class="flex justify-center px-4 py-8 border-t border-gray-200">
+            <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+              <button class="w-full px-8 py-2 text-white rounded bg-primary">
+                咳を寄付する
+              </button>
+            </a>
+          </section>
+        </div>
+
+        <!-- Desktop Nav -->
+        <ul
+          class="items-baseline justify-between hidden w-3/4 2xl:w-1/2 lg:flex"
+        >
+        <li>
+          <a href="./mission.html">
+            <span>ミッション</span></a>
+        </li>
+        <li>
+          <a href="./team.html">
+            <span>チーム</span>
+          </a>
+        </li>
+        <li>
+          <a href="./data.html">
+            <span>オープンデータ</span>
+          </a>
+        </li>
+        <li>
+          <a href="./research.html">
+            <span>研究</span>
+          </a>
+        </li>
+        <li>
+          <a href="./join.html">
+            <span>参加する</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.gofundme.com/f/virufyorg">
+            <button class="px-4 py-1 border rounded text-secondary-200 border-secondary-200">
+              咳を寄付する
+            </button>
+          </a>
+        </li>
+          <!-- Language Dropdown -->
+          <div class="relative inline-block group">
+            <button
+              class="px-4 py-1 overflow-visible border rounded text-secondary-200 border-secondary-200"
+            >
+              日本語
+            </button>
+            <div class="desktop-hover-menu">
+              <a class="pb-2" href="./../join.html">English</a>
+              <a class="pb-2" href="./../es/join.html">Español</a>
+              <a class="pb-2" href="./../br/join.html">Português</a>
+              <a class="pb-2" href="./../hi/join.html">हिन्दी</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </section>
+    <!-- End of nav section -->
+
+    <main>
+      <header class="flex items-center justify-between wrapper md:mt-20">
+        <div class="w-full md:w-7/12">
+          <h1
+            class="mb-6 text-4xl font-bold text-gray-300 md:text-5xl font-heading"
+          >
+          私たちと共にCOVID-19と闘いましょう！
+          </h1>
+          <p class="text-xl">
+            Virufyは、世界に影響を与えることに情熱を注いでいる非営利団体です。私たちは、仲間のメンターシップに焦点を当てたポジティブな学習環境をつくり、ボランティアが自分の分野で成長し、それぞれのスキルを使って世の中に影響を与えることができるようにします。私たちのボランティアは遠方から私たちのミッションに貢献しています。役割の説明で特に明記されていない限り、世界中のどこにでも拠点を置くことができます。
+          </p>
+        </div>
+        <div class="hidden md:block md:w-5/12">
+          <img class="ml-auto" src="../img/join-page/teamwork.png" alt="" />
+        </div>
+      </header>
+
+      <!-- Positions -->
+      <section class="justify-between my-10 wrapper md:my-20">
+        <div class="mb-20">
+          <!--Ingeniería-->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">エンジニアリング</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="../img/join-page/engineering.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">UXリサーチャー/デザイナー</p>
+
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1AQXIVDpG3LSV48tuQP_pqwwQ21hiy3rFO-f_Ebs6cdA/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      応募する
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  私たちはユーザーフレンドリーなウェブアプリとモバイルアプリの設計に情熱を注ぐUXリサーチャーを探しています。エンジニアと協力して、数百万人が使用する高性能のモバイルフレンドリーアプリケーションを開発および維持します。
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1AQXIVDpG3LSV48tuQP_pqwwQ21hiy3rFO-f_Ebs6cdA/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    応募する
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Marketing -->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">マーケティング</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="../img/join-page/marketing.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">マーケティングマネージャー</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1l6aohKhwZ2L2fbVPl600wJswh7ojPrGJ6YFPzkJgu0E/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      応募する
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  このボランティアは、ラテンアメリカで本格的なマーケティングキャンペーンを展開し、ソーシャルメディアプラットフォームを管理し、インフルエンサーとマスコミを関与させる役割があります。 Instagram、Facebook、Tiktokを通じてエンゲージメントを促進し、デジタル広告を使用します。
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1l6aohKhwZ2L2fbVPl600wJswh7ojPrGJ6YFPzkJgu0E/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    応募する
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">動画編集者</p>
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1bgIGXD_LUUrbtszgHlOhdUnbojWfmMlSXNwnI1naDTc/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      応募する
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  私たちは、デジタルコンテンツの編集と、アウトリーチやマーケティングを目的としたグラフィック/イラストの作成に情熱を傾けるタレント動画編集者を探しています。
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1bgIGXD_LUUrbtszgHlOhdUnbojWfmMlSXNwnI1naDTc/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    応募する
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- People -->
+          <div>
+            <div class="flex items-center justify-start mb-4">
+              <div>
+                <h2 class="text-3xl font-bold text-gray-200">求める人材</h2>
+              </div>
+              <div>
+                <img
+                  class="w-10/12 ml-2"
+                  src="../img/join-page/people.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">青年大使</p>
+
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      応募する
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  私たちは、各地方のできるだけ多くの人々がVirufyのウェブアプリとスマートフォンアプリを定期的に使用して咳データを提供できるように、キャンペーンを確立できる学生を探しています。
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1338K50Nix3_3JbzILjy6mMk99KQnxGUTmQwqJ-3Zn84/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    応募する
+                  </button>
+                </a>
+              </div>
+            </div>
+            <!--Next sub-position-->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <div>
+                  <p class="text-xl">データプライバシー弁護士</p>
+
+                </div>
+                <div class="hidden md:flex">
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/document/d/1onEOkzwo7rEl2IWcDWIBGzl8_RrJYdiWbiGiUApcnrc/edit?usp=sharing"
+                  >
+                    <button class="px-16 py-2 text-white rounded bg-primary">
+                      応募する
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full md:w-8/12">
+                <p>
+                  この役職の人物には、プライバシーポリシー、同意書、Cookieポリシー、DPIAなどのVirufyの法的文書を確認し、現地の規制に適合させていただきます。.
+                </p>
+              </div>
+              <div class="mt-4 md:hidden">
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1onEOkzwo7rEl2IWcDWIBGzl8_RrJYdiWbiGiUApcnrc/edit?usp=sharing"
+                >
+                  <button class="px-16 py-2 text-white rounded bg-primary">
+                    応募する
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Help us -->
+      <section
+        class="hidden mx-10 my-10 text-center md:block md:mx-20 md:my-20"
+      >
+        <div>
+          <h2 class="mb-4 text-2xl font-bold text-gray-200">
+            探している役職が見当たりませんか？ご連絡をお待ちしています！
+          </h2>
+        </div>
+        <div>
+          <a target="_blank" href="mailto:join@virufy.org">
+            <button class="px-16 py-2 text-white rounded bg-primary">
+              お問い合わせ
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="flex flex-col-reverse mx-auto max-w-screen-3xl md:flex-row md:justify-between">
+        <section>
+          <div>
+            <a target="_blank" href="../cookie_policy.pdf">クッキーポリシー </a> |
+            <a href="javascript: Cookiebot.renew()">クッキー設定</a> |
+            <a target="_blank" href="../privacy_policy.pdf">プライバシーポリシー</a>
+          </div>
+          <div>
+            <p>Copyright 2020 Virufy。 VIRUFYはThe Covid Detection Foundationの商標です。 全著作権所有。</p>
+          </div>
+        </section>
+        <!-- Icon container -->
+        <section class="flex mb-16">
+          <a target="_blank" href="https://github.com/virufy" class="mr-3">
+            <img src="../img/logos/github.svg" alt="Github Icon" class="footer-icons"/>
+          </a>
+          <a target="_blank" href="https://twitter.com/VirufyOrg" class="mr-3">
+            <img src="../img/logos/twitter.svg" alt="Twitter Icon" class="footer-icons"/>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/Virufy/" class="mr-3">
+            <img src="../img/logos/facebook.svg" alt="Facebook Icon" class="footer-icons"/>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/virufyorg/" class="mr-3">
+            <img src="../img/logos/instagram.svg" alt="Instagram Icon" class="footer-icons"/>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/virufy/" class="mr-3">
+            <img src="../img/logos/linkedin.svg" alt="LinkedIn Icon" class="footer-icons"/>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
