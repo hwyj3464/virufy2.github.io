@@ -4,6 +4,8 @@ Disallow: /scripts/
 Disallow: /src/
 
 User-agent: *
-Disallow: 
+Disallow: /img/
+Disallow: /scripts/
+Disallow: /src/
 
 sitemap: http://virufy.org/docs/sitemap.xml

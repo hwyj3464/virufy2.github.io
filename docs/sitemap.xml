@@ -4,12 +4,12 @@
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
 <url>
-    <loc>http://www.example.com/en/index.html</loc>
+    <loc>https://virufy.org/index.html</loc>
     <xhtml:link
-        rel="alternate"
-        hreflang="en"
-        href="https://virufy.org/index.html"
-        />
+      rel="alternate"
+      hreflang="en"
+      href="https://virufy.org/index.html"
+    />
     <xhtml:link
       rel="alternate"
       hreflang="es"
