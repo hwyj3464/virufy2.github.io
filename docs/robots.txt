@@ -8,4 +8,4 @@ Disallow: /img/
 Disallow: /scripts/
 Disallow: /src/
 
-sitemap: http://virufy.org/docs/sitemap.xml
+sitemap: http://virufy.org/sitemap.xml
