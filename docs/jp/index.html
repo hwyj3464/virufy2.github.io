@@ -15,8 +15,13 @@
   <link rel="icon" href="./../img/favicon.png" type="image/x-icon" />
 
   <!-- Cookie consent banner - Cookiebot -->
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="fb5fec28-28e3-45e9-baa6-51f9f62f936b"
-    data-blockingmode="auto" type="text/javascript"></script>
+  <script 
+    id="Cookiebot" 
+    src="https://consent.cookiebot.com/uc.js" 
+    data-cbid="fb5fec28-28e3-45e9-baa6-51f9f62f936b" 
+    data-blockingmode="auto" 
+    type="text/javascript"
+></script>
 
  <!-- Hotjar Tracking Code for virufy.org -->
     <script>
@@ -30,8 +35,22 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165690517-3"></script>
-  <script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script data-cookieconsent="ignore"> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag() { dataLayer.push(arguments); } 
+    gtag('consent', 'default', { 
+    'ad_storage': 'denied', 
+    'analytics_storage': 'denied', 
+    'wait_for_update': 500 
+  }); 
+  gtag('set', 'ads_data_redaction', true); 
+ </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-165690517-3"
+  ></script>
+  <script data-cookieconsent="ignore">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
